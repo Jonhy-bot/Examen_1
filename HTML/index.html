@@ -1,143 +1,278 @@
 <!doctype html>
-<html lang="en">
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Artesano — El Sabor de lo Artesanal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../CSS/style.css" />
-  <title>Document</title>
-  <title>Café Artesano — El Sabor de lo Artesanal</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="../CSS/style.css" />
-</head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <a href="#inicio" class="logo">
+          <span class="logo__icon">&#9749;</span>
+          <div class="logo__text">
+            <span class="logo__name">Café Artesano</span>
+            <span class="logo__tagline">El Sabor de lo Artesanal</span>
+          </div>
+        </a>
 
-<body></body>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
 
-<body>
-  <header class="header">
-    <div class="container header__inner">
-      <a href="#inicio" class="logo">
-        <span class="logo__icon">&#9749;</span>
-        <div class="logo__text">
-          <span class="logo__name">Café Artesano</span>
-          <span class="logo__tagline">El Sabor de lo Artesanal</span>
-        </div>
-      </a>
+        <label for="nav-toggle" class="hamburger" aria-label="Abrir menú">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </label>
 
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-
-      <label for="nav-toggle" class="hamburger" aria-label="Abrir menú">
-        <span class="hamburger__line"></span>
-        <span class="hamburger__line"></span>
-        <span class="hamburger__line"></span>
-      </label>
-
-      <nav class="nav" aria-label="Navegación principal">
-        <ul class="nav__list">
-          <li><a href="#inicio" class="nav__link">Inicio</a></li>
-          <li><a href="#menu" class="nav__link">Menú</a></li>
-          <li><a href="#ubicacion" class="nav__link">Ubicación</a></li>
-          <li><a href="#contacto" class="nav__link">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section id="inicio" class="hero">
-      <div class="hero__decoration" aria-hidden="true">
-        <div class="hero__circle hero__circle--1"></div>
-        <div class="hero__circle hero__circle--2"></div>
+        <nav class="nav" aria-label="Navegación principal">
+          <ul class="nav__list">
+            <li><a href="#inicio" class="nav__link">Inicio</a></li>
+            <li><a href="#menu" class="nav__link">Menú</a></li>
+            <li><a href="#ubicacion" class="nav__link">Ubicación</a></li>
+            <li><a href="#contacto" class="nav__link">Contacto</a></li>
+          </ul>
+        </nav>
       </div>
+    </header>
 
-      <div class="container hero__content">
-        <p class="hero__pretitle">Bienvenido a</p>
-        <h1 class="hero__title">Descubre el Arte<br>en Cada Taza</h1>
-        <p class="hero__subtitle">
-          Café de especialidad preparado con granos de origen único, tostados
-          artesanalmente para que cada sorbo sea una experiencia memorable.
-        </p>
-        <div class="hero__actions">
-          <a href="#menu" class="btn btn--primary">Ver Nuestro Menú</a>
-          <a href="#ubicacion" class="btn btn--outline">Visítanos</a>
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero__decoration" aria-hidden="true">
+          <div class="hero__circle hero__circle--1"></div>
+          <div class="hero__circle hero__circle--2"></div>
         </div>
-      </div>
-    </section>
 
-
-    <section id="caracteristicas" class="features">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">¿Por qué elegirnos?</h2>
-          <p class="section-subtitle">
-            Cada detalle importa cuando se trata de una buena taza de café
+        <div class="container hero__content">
+          <p class="hero__pretitle">Bienvenido a</p>
+          <h1 class="hero__title">Descubre el Arte<br />en Cada Taza</h1>
+          <p class="hero__subtitle">
+            Café de especialidad preparado con granos de origen único, tostados
+            artesanalmente para que cada sorbo sea una experiencia memorable.
           </p>
+          <div class="hero__actions">
+            <a href="#menu" class="btn btn--primary">Ver Nuestro Menú</a>
+            <a href="#ubicacion" class="btn btn--outline">Visítanos</a>
+          </div>
         </div>
+      </section>
 
-
-        <div class="features__grid">
-
-          <article class="feature-card">
-            <div class="feature-card__icon" aria-hidden="true">&#9749;</div>
-            <h3 class="feature-card__title">Café Premium</h3>
-            <p class="feature-card__text">
-              Seleccionamos granos de origen único provenientes de las mejores
-              regiones cafeteras del mundo, garantizando una calidad excepcional
-              en cada taza que preparamos.
+      <section id="caracteristicas" class="features">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">¿Por qué elegirnos?</h2>
+            <p class="section-subtitle">
+              Cada detalle importa cuando se trata de una buena taza de café
             </p>
-          </article>
+          </div>
 
-          <article class="feature-card">
-            <div class="feature-card__icon" aria-hidden="true">&#127807;</div>
-            <h3 class="feature-card__title">Sustentable</h3>
-            <p class="feature-card__text">
-              Trabajamos directamente con productores locales bajo prácticas de
-              comercio justo, cuidando tanto al agricultor como al planeta que
-              habitamos y queremos preservar.
-            </p>
-          </article>
+          <div class="features__grid">
+            <article class="feature-card">
+              <div class="feature-card__icon" aria-hidden="true">&#9749;</div>
+              <h3 class="feature-card__title">Café Premium</h3>
+              <p class="feature-card__text">
+                Seleccionamos granos de origen único provenientes de las mejores
+                regiones cafeteras del mundo, garantizando una calidad
+                excepcional en cada taza que preparamos.
+              </p>
+            </article>
 
-          <article class="feature-card">
-            <div class="feature-card__icon" aria-hidden="true">&#129309;</div>
-            <h3 class="feature-card__title">Comunidad</h3>
-            <p class="feature-card__text">
-              Somos más que un café: somos un punto de encuentro donde la
-              comunidad se reúne, conecta y comparte momentos memorables
-              cada día del año.
-            </p>
-          </article>
+            <article class="feature-card">
+              <div class="feature-card__icon" aria-hidden="true">&#127807;</div>
+              <h3 class="feature-card__title">Sustentable</h3>
+              <p class="feature-card__text">
+                Trabajamos directamente con productores locales bajo prácticas
+                de comercio justo, cuidando tanto al agricultor como al planeta
+                que habitamos y queremos preservar.
+              </p>
+            </article>
 
+            <article class="feature-card">
+              <div class="feature-card__icon" aria-hidden="true">&#129309;</div>
+              <h3 class="feature-card__title">Comunidad</h3>
+              <p class="feature-card__text">
+                Somos más que un café: somos un punto de encuentro donde la
+                comunidad se reúne, conecta y comparte momentos memorables cada
+                día del año.
+              </p>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+      <section id="menu" class="menu-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Nuestro Menú</h2>
+            <p class="section-subtitle">
+              Bebidas artesanales preparadas con dedicación y pasión
+            </p>
+          </div>
 
-    <section id="menu" class="menu-section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Nuestro Menú</h2>
-          <p class="section-subtitle">
-            Bebidas artesanales preparadas con dedicación y pasión
-          </p>
+          <div class="menu__grid">
+            <article class="menu-card">
+              <div class="menu-card__image-wrap">
+                <img
+                  src="https://placehold.co/400x260/8B6F47/FFF8F0?text=Espresso"
+                  alt="Espresso"
+                  class="menu-card__image"
+                  loading="lazy"
+                />
+                <span class="menu-card__badge">Clásico</span>
+              </div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Espresso</h3>
+                <p class="menu-card__desc">
+                  Concentrado intenso con crema dorada, extracción perfecta de
+                  25 segundos.
+                </p>
+                <div class="menu-card__footer">
+                  <span class="menu-card__price">$2.50</span>
+                  <a href="#contacto" class="btn btn--sm">Pedir</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-card__image-wrap">
+                <img
+                  src="https://placehold.co/400x260/C9A961/3D2817?text=Cappuccino"
+                  alt="Cappuccino"
+                  class="menu-card__image"
+                  loading="lazy"
+                />
+                <span class="menu-card__badge">Popular</span>
+              </div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Cappuccino</h3>
+                <p class="menu-card__desc">
+                  Espresso con leche vaporizada y espuma cremosa en proporciones
+                  perfectas.
+                </p>
+                <div class="menu-card__footer">
+                  <span class="menu-card__price">$4.00</span>
+                  <a href="#contacto" class="btn btn--sm">Pedir</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-card__image-wrap">
+                <img
+                  src="https://placehold.co/400x260/E8DCC8/3D2817?text=Latte"
+                  alt="Latte"
+                  class="menu-card__image"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Latte</h3>
+                <p class="menu-card__desc">
+                  Suave y cremoso, con doble espresso y leche texturizada al
+                  arte latte.
+                </p>
+                <div class="menu-card__footer">
+                  <span class="menu-card__price">$4.50</span>
+                  <a href="#contacto" class="btn btn--sm">Pedir</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-card__image-wrap">
+                <img
+                  src="https://placehold.co/400x260/8B6F47/FFF8F0?text=Americano"
+                  alt="Americano"
+                  class="menu-card__image"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Americano</h3>
+                <p class="menu-card__desc">
+                  Espresso diluido con agua caliente, suave y aromático para
+                  cualquier hora.
+                </p>
+                <div class="menu-card__footer">
+                  <span class="menu-card__price">$3.00</span>
+                  <a href="#contacto" class="btn btn--sm">Pedir</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-card__image-wrap">
+                <img
+                  src="https://placehold.co/400x260/3D2817/C9A961?text=Mocha"
+                  alt="Mocha"
+                  class="menu-card__image"
+                  loading="lazy"
+                />
+                <span class="menu-card__badge">Favorito</span>
+              </div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Mocha</h3>
+                <p class="menu-card__desc">
+                  Espresso intenso con chocolate artesanal y leche cremosa en
+                  armonía perfecta.
+                </p>
+                <div class="menu-card__footer">
+                  <span class="menu-card__price">$5.00</span>
+                  <a href="#contacto" class="btn btn--sm">Pedir</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-card__image-wrap">
+                <img
+                  src="https://placehold.co/400x260/C9A961/FFF8F0?text=Cold+Brew"
+                  alt="Cold Brew"
+                  class="menu-card__image"
+                  loading="lazy"
+                />
+                <span class="menu-card__badge">Nuevo</span>
+              </div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Cold Brew</h3>
+                <p class="menu-card__desc">
+                  Infusión en frío por 18 horas, suave, concentrado y
+                  refrescante. Ideal para el calor.
+                </p>
+                <div class="menu-card__footer">
+                  <span class="menu-card__price">$4.50</span>
+                  <a href="#contacto" class="btn btn--sm">Pedir</a>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
+      </section>
 
-        <div class="menu__grid">
+      <section id="ubicacion" class="location">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Encuéntranos</h2>
+            <p class="section-subtitle">
+              Te esperamos para compartir el mejor café de la ciudad
+            </p>
+          </div>
 
-          <article class="menu-card">
-            <div class="menu-card__image-wrap">
-              <img src="https://placehold.co/400x260/8B6F47/FFF8F0?text=Espresso" alt="Espresso"
-                class="menu-card__image" loading="lazy" />
-              <span class="menu-card__badge">Clásico</span>
-            </div>
-            <div class="menu-card__body">
-              <h3 class="menu-card__name">Espresso</h3>
-              <p class="menu-card__desc">
-                Concentrado intenso con crema dorada, extracción perfecta de 25 segundos.
+          <div class="location__grid">
+            <div class="location__card">
+              <div class="location__icon" aria-hidden="true">&#128205;</div>
+              <h3 class="location__label">Dirección</h3>
+              <p class="location__text">
+                Av. Principal 123<br />
+                Colonia Centro<br />
+                Ciudad, País
               </p>
               <div class="menu-card__footer">
                 <span class="menu-card__price">$2.50</span>
@@ -146,16 +281,13 @@
             </div>
           </article>
 
-          <article class="menu-card">
-            <div class="menu-card__image-wrap">
-              <img src="https://placehold.co/400x260/C9A961/3D2817?text=Cappuccino" alt="Cappuccino"
-                class="menu-card__image" loading="lazy" />
-              <span class="menu-card__badge">Popular</span>
-            </div>
-            <div class="menu-card__body">
-              <h3 class="menu-card__name">Cappuccino</h3>
-              <p class="menu-card__desc">
-                Espresso con leche vaporizada y espuma cremosa en proporciones perfectas.
+            <div class="location__card">
+              <div class="location__icon" aria-hidden="true">&#128336;</div>
+              <h3 class="location__label">Horarios</h3>
+              <p class="location__text">
+                Lunes a Viernes: 7:00 – 20:00<br />
+                Sábados: 8:00 – 21:00<br />
+                Domingos: 9:00 – 18:00
               </p>
               <div class="menu-card__footer">
                 <span class="menu-card__price">$4.00</span>
@@ -164,99 +296,30 @@
             </div>
           </article>
 
-          <article class="menu-card">
-            <div class="menu-card__image-wrap">
-              <img src="https://placehold.co/400x260/E8DCC8/3D2817?text=Latte" alt="Latte" class="menu-card__image"
-                loading="lazy" />
-            </div>
-            <div class="menu-card__body">
-              <h3 class="menu-card__name">Latte</h3>
-              <p class="menu-card__desc">
-                Suave y cremoso, con doble espresso y leche texturizada al arte latte.
+            <div class="location__card">
+              <div class="location__icon" aria-hidden="true">&#128222;</div>
+              <h3 class="location__label">Contacto</h3>
+              <p class="location__text">
+                Tel: +1 (555) 123-4567<br />
+                info@cafeartesano.com<br />
+                @cafeartesano
               </p>
               <div class="menu-card__footer">
                 <span class="menu-card__price">$4.50</span>
                 <a href="#contacto" class="btn btn--sm">Pedir</a>
               </div>
             </div>
-          </article>
-
-          <article class="menu-card">
-            <div class="menu-card__image-wrap">
-              <img src="https://placehold.co/400x260/8B6F47/FFF8F0?text=Americano" alt="Americano"
-                class="menu-card__image" loading="lazy" />
-            </div>
-            <div class="menu-card__body">
-              <h3 class="menu-card__name">Americano</h3>
-              <p class="menu-card__desc">
-                Espresso diluido con agua caliente, suave y aromático para cualquier hora.
-              </p>
-              <div class="menu-card__footer">
-                <span class="menu-card__price">$3.00</span>
-                <a href="#contacto" class="btn btn--sm">Pedir</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="menu-card">
-            <div class="menu-card__image-wrap">
-              <img src="https://placehold.co/400x260/3D2817/C9A961?text=Mocha" alt="Mocha" class="menu-card__image"
-                loading="lazy" />
-              <span class="menu-card__badge">Favorito</span>
-            </div>
-            <div class="menu-card__body">
-              <h3 class="menu-card__name">Mocha</h3>
-              <p class="menu-card__desc">
-                Espresso intenso con chocolate artesanal y leche cremosa en armonía perfecta.
-              </p>
-              <div class="menu-card__footer">
-                <span class="menu-card__price">$5.00</span>
-                <a href="#contacto" class="btn btn--sm">Pedir</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="menu-card">
-            <div class="menu-card__image-wrap">
-              <img src="https://placehold.co/400x260/C9A961/FFF8F0?text=Cold+Brew" alt="Cold Brew"
-                class="menu-card__image" loading="lazy" />
-              <span class="menu-card__badge">Nuevo</span>
-            </div>
-            <div class="menu-card__body">
-              <h3 class="menu-card__name">Cold Brew</h3>
-              <p class="menu-card__desc">
-                Infusión en frío por 18 horas, suave, concentrado y refrescante. Ideal para el calor.
-              </p>
-              <div class="menu-card__footer">
-                <span class="menu-card__price">$4.50</span>
-                <a href="#contacto" class="btn btn--sm">Pedir</a>
-              </div>
-            </div>
-          </article>
-
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <section id="ubicacion" class="location">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Encuéntranos</h2>
-          <p class="section-subtitle">
-            Te esperamos para compartir el mejor café de la ciudad
-          </p>
-        </div>
-
-        <div class="location__grid">
-
-          <div class="location__card">
-            <div class="location__icon" aria-hidden="true">&#128205;</div>
-            <h3 class="location__label">Dirección</h3>
-            <p class="location__text">
-              Av. Principal 123<br>
-              Colonia Centro<br>
-              Ciudad, País
-            </p>
+    <footer id="contacto" class="footer">
+      <div class="container footer__inner">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <span class="logo__icon">&#9749;</span>
+            <span class="footer__brand">Café Artesano</span>
           </div>
           <p class="footer__about">
             Desde 2010, llevamos la magia del café de especialidad a cada taza.
@@ -268,80 +331,34 @@
           </p>
         </div>
 
-          <div class="location__card">
-            <div class="location__icon" aria-hidden="true">&#128336;</div>
-            <h3 class="location__label">Horarios</h3>
-            <p class="location__text">
-              Lunes a Viernes: 7:00 – 20:00<br>
-              Sábados: 8:00 – 21:00<br>
-              Domingos: 9:00 – 18:00
-            </p>
-          </div>
+        <div class="footer__col">
+          <h3 class="footer__heading">Navegación</h3>
+          <ul class="footer__links">
+            <li><a href="#inicio" class="footer__link">Inicio</a></li>
+            <li><a href="#menu" class="footer__link">Nuestro Menú</a></li>
+            <li>
+              <a href="#caracteristicas" class="footer__link">Sobre Nosotros</a>
+            </li>
+            <li><a href="#ubicacion" class="footer__link">Ubicación</a></li>
+            <li><a href="#contacto" class="footer__link">Contacto</a></li>
+          </ul>
+        </div>
 
-          <div class="location__card">
-            <div class="location__icon" aria-hidden="true">&#128222;</div>
-            <h3 class="location__label">Contacto</h3>
-            <p class="location__text">
-              Tel: +1 (555) 123-4567<br>
-              info@cafeartesano.com<br>
-              @cafeartesano
-            </p>
-          </div>
-
+        <div class="footer__col">
+          <h3 class="footer__heading">Síguenos</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">&#128248; Instagram</a></li>
+            <li><a href="#" class="footer__link">&#128077; Facebook</a></li>
+            <li><a href="#" class="footer__link">&#128038; Twitter / X</a></li>
+            <li><a href="#" class="footer__link">&#9654; YouTube</a></li>
+          </ul>
+          <p class="footer__hashtag">
+            #CaféArtesano &nbsp; #CaféDeEspecialidad
+          </p>
         </div>
       </div>
-    </section>
-
-  </main>
-
-  <footer id="contacto" class="footer">
-    <div class="container footer__inner">
-      <div class="footer__col">
-        <div class="footer__logo">
-          <span class="logo__icon">&#9749;</span>
-          <span class="footer__brand">Café Artesano</span>
-        </div>
-        <p class="footer__about">
-          Desde 2010, llevamos la magia del café de especialidad a cada
-          taza. Nuestro compromiso es ofrecerte una experiencia auténtica,
-          cálida y memorable en cada visita.
-        </p>
-        <p class="footer__copy">
-          &copy; 2026 Café Artesano. Todos los derechos reservados.
-        </p>
-      </div>
-
-      <div class="footer__col">
-        <h3 class="footer__heading">Navegación</h3>
-        <ul class="footer__links">
-          <li><a href="#inicio" class="footer__link">Inicio</a></li>
-          <li><a href="#menu" class="footer__link">Nuestro Menú</a></li>
-          <li>
-            <a href="#caracteristicas" class="footer__link">Sobre Nosotros</a>
-          </li>
-          <li><a href="#ubicacion" class="footer__link">Ubicación</a></li>
-          <li><a href="#contacto" class="footer__link">Contacto</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__col">
-        <h3 class="footer__heading">Síguenos</h3>
-        <ul class="footer__links">
-          <li><a href="#" class="footer__link">&#128248; Instagram</a></li>
-          <li><a href="#" class="footer__link">&#128077; Facebook</a></li>
-          <li>
-            <a href="#" class="footer__link">&#128038; Twitter / X</a>
-          </li>
-          <li><a href="#" class="footer__link">&#9654; YouTube</a></li>
-        </ul>
-        <p class="footer__hashtag">
-          #CaféArtesano &nbsp; #CaféDeEspecialidad
-        </p>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
 
 </html>
